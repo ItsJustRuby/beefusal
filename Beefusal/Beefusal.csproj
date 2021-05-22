@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <DebugType>embedded</DebugType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PublishTrimmed>true</PublishTrimmed>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="9.2.2" />
+        <PackageReference Include="RestSharp" Version="106.11.7" />
+        <PackageReference Include="Sentry.Serilog" Version="2.1.6" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+        <PackageReference Include="YamlDotNet" Version="8.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="config.yml" />
+    </ItemGroup>
+
+</Project>

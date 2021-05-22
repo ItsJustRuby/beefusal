@@ -1,0 +1,11 @@
+sentryDsn: https://...@....ingest.sentry.io/....
+
+targetFolder: "./demo/"
+
+credentials:
+  user: asdf
+  password: superdupersecret
+
+queries:
+  - name: Coloring
+    query: "ref:coloring"
